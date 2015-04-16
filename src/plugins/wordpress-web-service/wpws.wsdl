@@ -145,8 +145,8 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      <element name="type" nillable="true" type="xsd:string"/>
      <element name="mimeType" nillable="true" type="xsd:string"/>
      <element name="commentCount" type="xsd:int"/>
-     <element name="filter" nillable="true" type="xsd:string"/>v
-     <element name="attatchemts" nillable="true" type="impl:ArrayOf_tns1_Post"></element>
+     <element name="filter" nillable="true" type="xsd:string"/>
+     <element name="attatchemts" nillable="true" type="impl:ArrayOf_tns1_Post"/>
     </sequence>
    </complexType>
    <complexType name="Page">
@@ -447,7 +447,7 @@ transport="http://schemas.xmlsoap.org/soap/http" />
   <wsdl:service name="WordPressWebService">
     <wsdl:port name="WordPressWebServiceHttpSoapEndpoint"
 binding="impl:WordPressWebServiceSoapBinding">
-      <wsdlsoap:address location="%{BLOG_URL}/index.php?/wpws" />
+      <wsdlsoap:address location="http://localhost/wordpress/index.php?/wpws" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
