@@ -16,17 +16,17 @@ class wp_WebService {
 	 * @param args is the paramater as used by the WordPress get_posts method 
 	 * @return wpws_Post[]
 	 */
-	function getPosts($args = null) {
-		if($args != null) $args = mysql_real_escape_string($args);
-		
-		$posts = get_posts($args);
-		$wpws_posts = array();
-		foreach($posts as $post) {
-			$wpws_posts[] = wpws_Post::convert($post);
-		}
-		return $wpws_posts;
-	 }
-	 
+	function getPosts($args_string = null) {
+        parse_str($args_string, $args);
+        $posts = get_posts($args);
+        $wpws_posts = array();
+        foreach($posts as $post) {
+         	$wpws_gallery = wp_WebService::getGallery($post->ID);
+        	$wpws_posts[] = wpws_Post::convert($post, $wpws_gallery);
+        }
+        return $wpws_posts;
+    }
+
 	 /**
 	 * Returns a post
 	 * @return wpws_Post

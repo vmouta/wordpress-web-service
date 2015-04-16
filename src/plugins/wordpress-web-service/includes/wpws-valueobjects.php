@@ -26,6 +26,7 @@ class wpws_Post {
 	public $mimeType;
 	public $commentCount;
 	public $filter;
+	public $gallery;
  
 	function __construct($id, $author, $date, $dateGmt,
 						 $content, $title, $excerpt,
@@ -33,7 +34,7 @@ class wpws_Post {
 						 $password, $name, $toPing, $pinged,
 						 $modified, $modifiedGmt, $contentFiltered,
 						 $parentId, $guid, $menuOrder, $type, $mimeType,
-						 $commentCount, $filter) {
+						 $commentCount, $filter, $gallery) {
 		$this->id = $id;
 		$this->author = $author;
 		$this->date = $date;
@@ -58,6 +59,7 @@ class wpws_Post {
 		$this->mimeType = $mimeType;
 		$this->commentCount = $commentCount;
 		$this->filter = $filter;
+		$this->gallery = $gallery;
 	}
 	
 	/**
@@ -65,7 +67,7 @@ class wpws_Post {
 	 * to a wpws_Post object.
 	 * @return wpws_Post
 	 */
-	function convert($post) {
+	function convert($post, $gallery) {
 		if(!$post) return null;
 		else {
 			$wpws_post = new wpws_Post(
@@ -92,7 +94,8 @@ class wpws_Post {
 					$post->post_type,
 					$post->post_mime_type,
 					$post->comment_count,
-					$post->filter);
+					$post->filter,
+					$gallery);
 			return $wpws_post;
 		}
 	}

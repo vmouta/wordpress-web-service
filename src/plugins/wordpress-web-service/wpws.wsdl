@@ -146,7 +146,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      <element name="mimeType" nillable="true" type="xsd:string"/>
      <element name="commentCount" type="xsd:int"/>
      <element name="filter" nillable="true" type="xsd:string"/>
-     <element name="attatchemts" nillable="true" type="impl:ArrayOf_tns1_Post"/>
+     <element name="gallery" nillable="true" type="tns1:Gallery"/>
     </sequence>
    </complexType>
    <complexType name="Page">
