@@ -433,10 +433,10 @@ transport="http://schemas.xmlsoap.org/soap/http" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getGallery">
-      <wsdlsoap:operation soapAction="http://wpws.bkahlert.com/getGallery">
+      <wsdlsoap:operation soapAction="http://wpws.bkahlert.com/getGallery" >
     </wsdlsoap:operation>
       <wsdl:input name="getGalleryRequest">
-        <wsdlsoap:body use="literal" namespace="http://wpws.bkahlert.com">
+        <wsdlsoap:body use="literal" namespace="http://wpws.bkahlert.com" >
       </wsdlsoap:body>
     </wsdl:input>
       <wsdl:output name="getGalleryResponse">
@@ -447,7 +447,7 @@ transport="http://schemas.xmlsoap.org/soap/http" />
   <wsdl:service name="WordPressWebService">
     <wsdl:port name="WordPressWebServiceHttpSoapEndpoint"
 binding="impl:WordPressWebServiceSoapBinding">
-      <wsdlsoap:address location="http://localhost/wordpress/index.php?/wpws" />
+      <wsdlsoap:address location="http://blog.zucred.com/index.php?/wpws" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

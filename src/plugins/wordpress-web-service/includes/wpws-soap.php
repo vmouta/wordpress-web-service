@@ -17,7 +17,7 @@ class wp_WebService {
 	 * @return wpws_Post[]
 	 */
 	function getPosts($args_string = null) {
-        parse_str($args_string, $args);
+        if($args != null) parse_str($args_string, $args);
         $posts = get_posts($args);
         $wpws_posts = array();
         foreach($posts as $post) {

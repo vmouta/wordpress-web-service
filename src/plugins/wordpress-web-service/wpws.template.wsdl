@@ -4,149 +4,149 @@
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://wpws.bkahlert.com" xmlns="http://www.w3.org/2001/XMLSchema">
-   <import namespace="http://model.wpws.bkahlert.com"/>
-   <element name="galleryId" type="xsd:int"/>
-   <element name="includeSubGalleries" type="xsd:boolean"/>
+   <import namespace="http://model.wpws.bkahlert.com" />
+   <element name="galleryId" type="xsd:int" />
+   <element name="includeSubGalleries" type="xsd:boolean" />
    <complexType name="ArrayOf_tns1_Image">
     <sequence>
-     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Image"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Image" />
     </sequence>
    </complexType>
    <element name="getImagesReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Image"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Image" />
      </sequence>
     </complexType>
    </element>
-   <element name="args" type="xsd:string"/>
+   <element name="args" type="xsd:string" />
    <complexType name="ArrayOf_tns1_Category">
     <sequence>
-     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Category"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Category" />
     </sequence>
    </complexType>
    <element name="getCategoriesReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Category"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Category" />
      </sequence>
     </complexType>
    </element>
-   <element name="args1" type="xsd:string"/>
+   <element name="args1" type="xsd:string" />
    <complexType name="ArrayOf_tns1_Page">
     <sequence>
-     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Page"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Page" />
     </sequence>
    </complexType>
    <element name="getPagesReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Page"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Page" />
      </sequence>
     </complexType>
    </element>
-   <element name="pageId" type="xsd:int"/>
-   <element name="getPageReturn" type="tns1:Page"/>
-   <element name="args2" type="xsd:string"/>
+   <element name="pageId" type="xsd:int" />
+   <element name="getPageReturn" type="tns1:Page" />
+   <element name="args2" type="xsd:string" />
    <complexType name="ArrayOf_tns1_Post">
     <sequence>
-     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Post"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Post" />
     </sequence>
    </complexType>
    <element name="getPostsReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Post"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Post" />
      </sequence>
     </complexType>
    </element>
-   <element name="postId" type="xsd:int"/>
-   <element name="getPostReturn" type="tns1:Post"/>
-   <element name="args3" type="xsd:string"/>
+   <element name="postId" type="xsd:int" />
+   <element name="getPostReturn" type="tns1:Post" />
+   <element name="args3" type="xsd:string" />
    <complexType name="ArrayOf_tns1_Gallery">
     <sequence>
-     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery" />
     </sequence>
    </complexType>
    <element name="getGalleryHierarchyReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery" />
      </sequence>
     </complexType>
    </element>
-   <element name="args4" type="xsd:string"/>
+   <element name="args4" type="xsd:string" />
    <element name="getGalleriesReturn">
     <complexType>
      <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Gallery" />
      </sequence>
     </complexType>
    </element>
-   <element name="galleryId1" type="xsd:int"/>
-   <element name="getGalleryReturn" type="tns1:Gallery"/>
+   <element name="galleryId1" type="xsd:int" />
+   <element name="getGalleryReturn" type="tns1:Gallery" />
   </schema>
   <schema elementFormDefault="qualified" targetNamespace="http://model.wpws.bkahlert.com" xmlns="http://www.w3.org/2001/XMLSchema">
-   <import namespace="http://wpws.bkahlert.com"/>
+   <import namespace="http://wpws.bkahlert.com" />
    <complexType name="Image">
     <sequence>
-     <element name="parentId" type="xsd:int"/>
-     <element name="url" nillable="true" type="xsd:string"/>
-     <element name="width" type="xsd:int"/>
-     <element name="height" type="xsd:int"/>
-     <element name="resizeableUrl" nillable="true" type="xsd:string"/>
-     <element name="maxResizeableWidth" type="xsd:int"/>
-     <element name="maxResizeableHeight" type="xsd:int"/>
-     <element name="title" nillable="true" type="xsd:string"/>
-     <element name="description" nillable="true" type="xsd:string"/>
+     <element name="parentId" type="xsd:int" />
+     <element name="url" nillable="true" type="xsd:string" />
+     <element name="width" type="xsd:int" />
+     <element name="height" type="xsd:int" />
+     <element name="resizeableUrl" nillable="true" type="xsd:string" />
+     <element name="maxResizeableWidth" type="xsd:int" />
+     <element name="maxResizeableHeight" type="xsd:int" />
+     <element name="title" nillable="true" type="xsd:string" />
+     <element name="description" nillable="true" type="xsd:string" />
     </sequence>
    </complexType>
    <complexType name="Category">
     <sequence>
-     <element name="termId" type="xsd:int"/>
-     <element name="name" nillable="true" type="xsd:string"/>
-     <element name="slug" nillable="true" type="xsd:string"/>
-     <element name="termGroup" nillable="true" type="xsd:string"/>
-     <element name="termTaxonomyId" nillable="true" type="xsd:string"/>
-     <element name="taxonomy" nillable="true" type="xsd:string"/>
-     <element name="description" nillable="true" type="xsd:string"/>
-     <element name="parentId" type="xsd:int"/>
-     <element name="count" type="xsd:int"/>
-     <element name="catId" type="xsd:int"/>
-     <element name="categoryCount" type="xsd:int"/>
-     <element name="categoryDescription" nillable="true" type="xsd:string"/>
-     <element name="categoryName" nillable="true" type="xsd:string"/>
-     <element name="categoryNicename" nillable="true" type="xsd:string"/>
-     <element name="categoryParent" type="xsd:int"/>
+     <element name="termId" type="xsd:int" />
+     <element name="name" nillable="true" type="xsd:string" />
+     <element name="slug" nillable="true" type="xsd:string" />
+     <element name="termGroup" nillable="true" type="xsd:string" />
+     <element name="termTaxonomyId" nillable="true" type="xsd:string" />
+     <element name="taxonomy" nillable="true" type="xsd:string" />
+     <element name="description" nillable="true" type="xsd:string" />
+     <element name="parentId" type="xsd:int" />
+     <element name="count" type="xsd:int" />
+     <element name="catId" type="xsd:int" />
+     <element name="categoryCount" type="xsd:int" />
+     <element name="categoryDescription" nillable="true" type="xsd:string" />
+     <element name="categoryName" nillable="true" type="xsd:string" />
+     <element name="categoryNicename" nillable="true" type="xsd:string" />
+     <element name="categoryParent" type="xsd:int" />
     </sequence>
    </complexType>
    <complexType name="Post">
     <sequence>
-     <element name="id" type="xsd:int"/>
-     <element name="author" nillable="true" type="xsd:string"/>
-     <element name="date" nillable="true" type="xsd:dateTime"/>
-     <element name="dateGmt" nillable="true" type="xsd:dateTime"/>
-     <element name="content" nillable="true" type="xsd:string"/>
-     <element name="title" nillable="true" type="xsd:string"/>
-     <element name="excerpt" nillable="true" type="xsd:string"/>
-     <element name="status" nillable="true" type="xsd:string"/>
-     <element name="commentStatus" nillable="true" type="xsd:string"/>
-     <element name="pingStatus" nillable="true" type="xsd:string"/>
-     <element name="password" nillable="true" type="xsd:string"/>
-     <element name="name" nillable="true" type="xsd:string"/>
-     <element name="toPing" nillable="true" type="xsd:string"/>
-     <element name="pinged" nillable="true" type="xsd:string"/>
-     <element name="modified" nillable="true" type="xsd:dateTime"/>
-     <element name="modifiedGmt" nillable="true" type="xsd:dateTime"/>
-     <element name="contentFiltered" nillable="true" type="xsd:string"/>
-     <element name="parentId" type="xsd:int"/>
-     <element name="guid" nillable="true" type="xsd:string"/>
-     <element name="menuOrder" type="xsd:int"/>
-     <element name="type" nillable="true" type="xsd:string"/>
-     <element name="mimeType" nillable="true" type="xsd:string"/>
-     <element name="commentCount" type="xsd:int"/>
-     <element name="filter" nillable="true" type="xsd:string"/>v
-     <element name="gallery" nillable="true" type="tns1:Gallery"></element>
+     <element name="id" type="xsd:int" />
+     <element name="author" nillable="true" type="xsd:string" />
+     <element name="date" nillable="true" type="xsd:dateTime" />
+     <element name="dateGmt" nillable="true" type="xsd:dateTime" />
+     <element name="content" nillable="true" type="xsd:string" />
+     <element name="title" nillable="true" type="xsd:string" />
+     <element name="excerpt" nillable="true" type="xsd:string" />
+     <element name="status" nillable="true" type="xsd:string" />
+     <element name="commentStatus" nillable="true" type="xsd:string" />
+     <element name="pingStatus" nillable="true" type="xsd:string" />
+     <element name="password" nillable="true" type="xsd:string" />
+     <element name="name" nillable="true" type="xsd:string" />
+     <element name="toPing" nillable="true" type="xsd:string" />
+     <element name="pinged" nillable="true" type="xsd:string" />
+     <element name="modified" nillable="true" type="xsd:dateTime" />
+     <element name="modifiedGmt" nillable="true" type="xsd:dateTime" />
+     <element name="contentFiltered" nillable="true" type="xsd:string" />
+     <element name="parentId" type="xsd:int" />
+     <element name="guid" nillable="true" type="xsd:string" />
+     <element name="menuOrder" type="xsd:int" />
+     <element name="type" nillable="true" type="xsd:string" />
+     <element name="mimeType" nillable="true" type="xsd:string" />
+     <element name="commentCount" type="xsd:int" />
+     <element name="filter" nillable="true" type="xsd:string" />
+     <element name="gallery" nillable="true" type="tns1:Gallery" />
     </sequence>
    </complexType>
    <complexType name="Page">
@@ -158,13 +158,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    </complexType>
    <complexType name="Gallery">
     <sequence>
-     <element name="id" type="xsd:int"/>
-     <element name="parentId" type="xsd:int"/>
-     <element name="title" nillable="true" type="xsd:string"/>
-     <element name="description" nillable="true" type="xsd:string"/>
-     <element name="mainImage" nillable="true" type="tns1:Image"/>
-     <element name="images" nillable="true" type="impl:ArrayOf_tns1_Image"/>
-     <element name="subGalleries" nillable="true" type="impl:ArrayOf_tns1_Gallery"/>
+     <element name="id" type="xsd:int" />
+     <element name="parentId" type="xsd:int" />
+     <element name="title" nillable="true" type="xsd:string" />
+     <element name="description" nillable="true" type="xsd:string" />
+     <element name="mainImage" nillable="true" type="tns1:Image" />
+     <element name="images" nillable="true" type="impl:ArrayOf_tns1_Image" />
+     <element name="subGalleries" nillable="true" type="impl:ArrayOf_tns1_Gallery" />
     </sequence>
    </complexType>
   </schema>
@@ -433,11 +433,9 @@ transport="http://schemas.xmlsoap.org/soap/http" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getGallery">
-      <wsdlsoap:operation soapAction="http://wpws.bkahlert.com/getGallery">
-    </wsdlsoap:operation>
+      <wsdlsoap:operation soapAction="http://wpws.bkahlert.com/getGallery" />
       <wsdl:input name="getGalleryRequest">
-        <wsdlsoap:body use="literal" namespace="http://wpws.bkahlert.com">
-      </wsdlsoap:body>
+        <wsdlsoap:body use="literal" namespace="http://wpws.bkahlert.com" />
     </wsdl:input>
       <wsdl:output name="getGalleryResponse">
         <wsdlsoap:body use="literal" namespace="http://wpws.bkahlert.com" />
@@ -445,8 +443,7 @@ transport="http://schemas.xmlsoap.org/soap/http" />
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="WordPressWebService">
-    <wsdl:port name="WordPressWebServiceHttpSoapEndpoint"
-binding="impl:WordPressWebServiceSoapBinding">
+    <wsdl:port name="WordPressWebServiceHttpSoapEndpoint" binding="impl:WordPressWebServiceSoapBinding">
       <wsdlsoap:address location="%{BLOG_URL}/index.php?/wpws" />
     </wsdl:port>
   </wsdl:service>
